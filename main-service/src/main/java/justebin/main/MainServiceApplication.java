@@ -1,13 +1,13 @@
-package com.justebin;
+package justebin.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JustebinApplication {
+public class MainServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JustebinApplication.class, args);
+        SpringApplication.run(MainServiceApplication.class, args);
     }
 
 }

@@ -1,10 +1,10 @@
-package justebin.eurekaserver;
+package justebin.main;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EurekaServerApplicationTests {
+class MainServiceApplicationTests {
 
     @Test
     void contextLoads() {
