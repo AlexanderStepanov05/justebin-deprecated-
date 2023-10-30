@@ -1,1 +1,4 @@
 rootProject.name = 'justebin'
+include ':auth-service'
+include ':eureka-server'
+include ':main-service'

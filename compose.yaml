@@ -1,1 +1,9 @@
 services:
+  main-service:
+    build: ./main-service
+  auth-service:
+    build: ./auth-service
+  eureka-server:
+    build: ./eureka-server
+
+
