@@ -1,3 +1,5 @@
+version: '2.23.0'
+
 services:
   main-service:
     build: ./main-service
