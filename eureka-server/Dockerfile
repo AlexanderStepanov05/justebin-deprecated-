@@ -1,10 +1,8 @@
-FROM openjdk:20-slim
+FROM amazoncorretto:20
 LABEL authors="inkerinmaa"
-# The application's jar file
-ARG JAR_FILE
 
 # Add the application's jar to the container
-COPY ${JAR_FILE} app.jar
+COPY build/libs/eureka-server-0.0.1-SNAPSHOT.jar /app.jar
 
 #execute the application
 ENTRYPOINT ["java", "-jar", "/app.jar"]
