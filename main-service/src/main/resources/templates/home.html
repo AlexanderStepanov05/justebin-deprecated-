@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Justebin</title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link href="bootstrap.css" rel="stylesheet">
+  <link href="app.bundle.css" rel="stylesheet">
+</head>
+<body class="night-auto " data-pr="x2xy94pJ" data-pa="" data-sar="1" data-abd="1" data-bd="1">
+
+<div class="wrap">
+  <div class="header">
+    <div class="container">
+      <div class="header__container">
+        <div class="header__left">
+          <a class="header__logo" href="/">
+            Justebin                </a>
+
+          <a class="header__btn" href="/">
+            <span>paste</span>
+          </a>
+
+          <div class="header__search">
+            <form id="w1" class="search_form" action="https://pastebin.com/search" method="get">
+              <input type="text" id="q" class="search_input" name="q" maxlength="128" placeholder="Search...">
+              <button type="submit" class="search_btn" aria-label="Search"><svg class="icon search"><use xlink:href="#search"></use></svg></button>
+            </form>                                    </div>
+        </div>
+        <div class="header__right">
+          <div class="header_sign">
+            <a href="/login" class="btn-sign sign-in">Login</a>
+            <a href="/signup" class="btn-sign sign-up">Sign up</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+
+      <div class="post-create">
+
+        <div class="post-form  js-post-form">
+
+          <form id="w0" class="js-create-form form-horizontal" action="/" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="_csrf-frontend" value="f9x9wJ9tOFDY_9AvEZfEOaX9K_3V6Vx1RHc_lDXlBPQ2iBP5zD9NIZ6RnVdL77R_xo1Jmq3QCzw9H3DAYrUzgQ==">
+            <div class="error-summary" style="display:none"><p>Please fix the following errors:</p><ul></ul></div>
+            <div class="content__title -no-border">
+              New Paste
+
+              <div class="post-form__live-code">
+                <div class="toggle">
+                  <span class="toggle__text">Syntax Highlighting</span>
+                  <div class="toggle__control">
+                    <input id="paste-raw-on" type="checkbox" class="js-live-code-highlight">
+                    <label for="paste-raw-on"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group field-postform-text required">
+              <textarea id="postform-text" class="textarea -form js-paste-code" name="PostForm[text]" aria-label="New Paste" aria-required="true"></textarea>
+            </div>
+            <div class="content__title -paste">Optional Paste Settings</div>
+
+            <div class="post-form__bottom">
+              <div class="post-form__left">
+
+                <div class="form-group field-postform-category_id">
+                  <label class="control-label col-sm-3" for="postform-category_id">Category:</label>
+                  <div class="col-sm-9 field-wrapper">
+                    <div class="kv-plugin-loading loading-postform-category_id">&nbsp;</div><select id="postform-category_id" class="form-control" name="PostForm[category_id]" data-s2-options="s2options_7ebc6538" data-krajee-select2="select2_662ea3af" style="width: 1px; height: 1px; visibility: hidden;">
+                    <option value="0">None</option>
+                    <option value="5">Cryptocurrency</option>
+                    <option value="4">Cybersecurity</option>
+                    <option value="7">Fixit</option>
+                    <option value="8">Food</option>
+                    <option value="9">Gaming</option>
+                    <option value="10">Haiku</option>
+                    <option value="11">Help</option>
+                    <option value="12">History</option>
+                    <option value="13">Housing</option>
+                    <option value="14">Jokes</option>
+                    <option value="15">Legal</option>
+                    <option value="16">Money</option>
+                    <option value="6">Movies</option>
+                    <option value="17">Music</option>
+                    <option value="18">Pets</option>
+                    <option value="19">Photo</option>
+                    <option value="20">Science</option>
+                    <option value="21">Software</option>
+                    <option value="27">Source Code</option>
+                    <option value="22">Spirit</option>
+                    <option value="23">Sports</option>
+                    <option value="24">Travel</option>
+                    <option value="25">TV</option>
+                    <option value="26">Writing</option>
+                  </select>
+
+                  </div>
+                </div>
+                <div class="form-group field-postform-tag">
+                  <label class="control-label col-sm-3" for="postform-tag">Tags:</label>
+                  <div class="col-sm-9 field-wrapper">
+                    <input type="text" id="postform-tag" class="form-control" name="PostForm[tag]">
+                  </div>
+                </div>
+                <div class="form-group field-postform-format">
+                  <label class="control-label col-sm-3" for="postform-format">Syntax Highlighting:</label>
+                  <div class="col-sm-9 field-wrapper">
+                    <div class="kv-plugin-loading loading-postform-format">&nbsp;</div><select id="postform-format" class="form-control" name="PostForm[format]" data-s2-options="s2options_7ebc6538" data-krajee-select2="select2_662ea3af" style="width: 1px; height: 1px; visibility: hidden;">
+                    <option value="1" data-language="text">None</option></select>
+
+                  </div>
+                </div>
+                <div class="post-form__folder">
+                  <div class="form-group field-postform-folder_key">
+                    <label class="control-label col-sm-3" for="postform-folder_key">Folder:</label>
+                    <div class="col-sm-9 field-wrapper">
+                      <div class="kv-plugin-loading loading-postform-folder_key">&nbsp;</div><select id="postform-folder_key" class="form-control" name="PostForm[folder_key]" data-s2-options="s2options_7ebc6538" data-krajee-select2="select2_a09a7382" style="width: 1px; height: 1px; visibility: hidden;">
+                      <option value="1" disabled>(members only)</option>
+                    </select>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group field-postform-is_password_enabled">
+                  <label class="control-label col-sm-3">Password</label>
+                  <div class="col-sm-9 field-wrapper">
+
+                    <input type="hidden" name="PostForm[is_password_enabled]" value="0"><input type="checkbox" id="postform-is_password_enabled" class="js-is-password-enabled" name="PostForm[is_password_enabled]" value="1">
+                    <label for="postform-is_password_enabled">
+                      <span></span><span class="green js-is-password-enabled-label hide">Enabled</span><span class="js-is-password-enabled-label ">Disabled</span>
+                    </label>
+                  </div>
+
+                  <div style="clear: both"></div>
+
+                  <label class="control-label col-sm-3" for="postform-password"> </label>
+                  <div class="col-sm-9 field-wrapper">
+                    <input type="text" id="postform-password" class="form-control js-password" name="PostForm[password]" disabled maxlength="64" aria-label="Password">
+
+                  </div>
+                </div>
+
+                <div class="form-group field-postform-is_burn">
+                  <div class="col-sm-9 col-sm-offset-3">
+                    <input type="hidden" name="PostForm[is_burn]" value="0"><input type="checkbox" id="postform-is_burn" class="js-burn" name="PostForm[is_burn]" value="1">
+                    <label for="postform-is_burn">
+                      <span></span>Burn after read
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group field-postform-name">
+                  <label class="control-label col-sm-3" for="postform-name">Paste Name / Title:</label>
+                  <div class="col-sm-9 field-wrapper">
+                    <input type="text" id="postform-name" class="form-control" name="PostForm[name]" maxlength="100">
+                  </div>
+                </div>
+                <div class="form-group form-btn-container">
+                  <button type="submit" class="btn -big">Create New Paste</button>
+                </div>
+              </div>
+              <div class="post-form__right h_800">
+                <div class="post-form__user">
+                  <div class="post-form__avatar">
+                    <img alt="Guest User">                    </div>
+                  <div class="post-form__text">
+                    <div class="post-form__name">
+                      Hello <b>Guest</b>                        </div>
+                    <div class="post-form__sign">
+                      <a href="/signup" class="btn">Sign Up</a>&nbsp;or&nbsp;<a href="/login" class="btn">Login</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post-form__oauth">
+                  <a class="post-form__link -facebook" href="/site/auth-facebook">Sign in with Facebook</a>                    <a class="post-form__link -twitter" href="/site/auth-twitter">Sign in with Twitter</a>                    <a class="post-form__link -google" href="/site/auth-google">Sign in with Google</a>                </div>
+
+              </div>
+            </div>
+          </form>
+
+          <div class="page">
+            <div class="content__text">
+              <div class="notice -post-form">You are currently not logged in, this means you can not edit or delete anything you paste. <a href="/signup">Sign Up</a> or <a href="/login">Login</a></div>
+            </div>
+          </div>
+        </div>
+      </div>            <div style="clear: both;"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
