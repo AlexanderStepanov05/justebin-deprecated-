@@ -19,6 +19,7 @@ import java.util.Collection;
 @Entity
 @Data
 @NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
+@RequiredArgsConstructor
 public class User implements UserDetails {
 
     @Id
@@ -28,9 +29,11 @@ public class User implements UserDetails {
     private String username;
     private String password;
 
-    public User() {
-
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
