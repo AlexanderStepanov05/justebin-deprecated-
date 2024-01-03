@@ -1,2 +1,2 @@
 # justebin
-My analogue of pastebin
+~~My analogue of pastebin~~
